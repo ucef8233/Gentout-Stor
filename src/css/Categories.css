@@ -1,0 +1,48 @@
+.w{
+    width: 18rem;
+}
+.h{
+    height: 11rem;
+    object-fit: cover;
+}
+.newTag{
+    width: 40px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: small;
+    color: white;
+    padding: 1px;
+    background-color: orange;
+    
+    
+}
+.pr-name{
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.btn , .numbers:hover{
+    background-image: linear-gradient(to right,#F9207B, orange);
+}
+.numbers{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+   
+}
+.numbers:hover{
+    border: none;
+}
+.marge{
+    margin: auto ;
+    width: 50%;
+}
+@media only screen and (max-width : 760px){
+    .marge{
+        width: 95%;
+
+    }
+    .container {
+        width: 100% !important;
+    }
+}

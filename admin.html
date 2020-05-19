@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    bootstrap CSS-->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <!--    style.css-->
+    <link href="src/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Page Content -->
+<div class="vertical-nav bg-dark" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-dark">
+        <div class="media-body">
+
+            <!--            Logo Link-->
+
+            <a href="admin.html">
+
+                <div class="rounded-lg w-75 ml-auto mr-auto mb-5 bg-white">
+                    <img alt="" class="m-2" src="src/img/logo.svg">
+                </div>
+            </a>
+            <h4 class="font-weight-white text-center text-muted mb-lg-4">Admin Panel</h4>
+
+
+        </div>
+    </div>
+    <div class="w-50 ml-auto p-2 mr-auto mb-5">
+        <img alt="" class="account-logo" src="src/img/account.svg">
+    </div>
+    <!--   Links Of each section -->
+
+    <ul class="nav flex-column bg-dark mb-0">
+        <li class="nav-item" id="prods">
+            <a class="nav-link text-light  mb-4 bg-dark" href="#">
+                Products
+            </a>
+        </li>
+        <li class="nav-item" id="cats">
+            <a class="nav-link text-light mb-4  bg-dark" href="#">
+                Categories
+            </a>
+        </li>
+        <li class="nav-item" id="coops">
+            <a class="nav-link text-light mb-4  bg-dark" href="#">
+                Cooperatives
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="page-content p-5" id="content">
+    <!-- Toggle button -->
+    <button class="btn btn-dark bg-dark rounded-pill shadow-sm px-4 mb-4" id="sidebarCollapse" type="button">
+        <small class="text-uppercase font-weight-bold" id="togl"> <<< </small>
+    </button>
+
+    <section class="welcome">
+        <h1 class="card-title text-center" id="admin-title">Welcome to admin panel</h1>
+    </section>
+    <section class="container hide" id="products">
+
+        <div class="row d-flex flex-row justify-content-between">
+
+            <button class="btn btn-success collapsed" id="add-prod" type="button">Add</button>
+
+            <button class="btn btn-info collapsed" id="edit-prod" type="button">Edit</button>
+
+            <button class="btn btn-danger collapsed" id="del-prod" type="button">Delete</button>
+        </div>
+
+        <div class="collapse mt-3 p-4 " id="add-collapse">
+            <form>
+                <!--                Name-->
+                <div class="form-group">
+                    <label for="add-prod-name">Product Name</label>
+                    <input class="form-control" id="add-prod-name" placeholder="Name" type="text">
+                </div>
+                <!--                short Dessc-->
+                <div class="form-group">
+                    <label for="add-prod-sDesc">Short Description</label>
+                    <input class="form-control" id="add-prod-sDesc" placeholder="Short description ..." type="text">
+                </div>
+                <!--                Price-->
+                <div class="form-group">
+                    <label class="d-block" for="add-prod-price">Price</label>
+                    <div class="form-group w-auto d-inline-flex">
+                        <input class="form-control" id="add-prod-price" placeholder="Price" type="number">
+                        <label class="m-2" for="add-prod-price">DH</label>
+
+                    </div>
+                </div>
+                <!--                Category-->
+                <div class="form-group">
+                    <label for="add-prod-cats">Related Category</label>
+                    <select class="form-control" id="add-prod-cats" multiple>
+                        <option>category 1</option>
+                        <option>category 2</option>
+                        <option>category 3</option>
+                        <option>category 4</option>
+                        <option>category 5</option>
+                    </select>
+                </div>
+                <!--                Long Desc-->
+                <div class="form-group">
+                    <label for="add-prod-desc">Description</label>
+                    <textarea class="form-control" id="add-prod-desc" placeholder="Description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="add-prod-img">Add Product Picture</label>
+                    <input class="form-control-file" id="add-prod-img" type="file">
+                </div>
+                <button class="btn btn-success mb-2" type="submit">Confirm</button>
+
+            </form>
+        </div>
+        <div class="collapse mt-3  p-4" id="edit-collapse">
+            <form>
+                <div class="form-group">
+                    <label for="product-id">Product ID</label>
+                    <input class="form-control" id="product-id" placeholder="ID" type="number">
+                    <!--                    <button class="btn btn-primary mb-2" type="submit">Confirm</button>-->
+
+                </div>
+                <div class="edit-product">
+                    <div class="form-group">
+                        <label for="product-name">Product Name</label>
+                        <input class="form-control" id="product-name" placeholder="Name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="product-shortDesc">Short Description</label>
+                        <input class="form-control" id="product-shortDesc" placeholder="Desc..." type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block" for="product-price">Price</label>
+                        <div class="form-group w-auto d-inline-flex">
+                            <input class="form-control" id="product-price" placeholder="Price" type="number">
+                            <label class="m-2" for="product-price">DH</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Related Category</label>
+                        <select class="form-control" id="exampleFormControlSelect2" multiple>
+                            <option>category 1</option>
+                            <option>category 2</option>
+                            <option>category 3</option>
+                            <option>category 4</option>
+                            <option>category 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input class="form-control-file" id="exampleFormControlFile1" type="file">
+                    </div>
+                </div>
+                <button class="btn btn-info mb-2" type="submit">Confirm</button>
+
+            </form>
+        </div>
+        <div class="collapse mt-3 p-4" id="del-collapse">
+            <form>
+                <div class="form-group">
+                    <label for="r-product-id">Product ID</label>
+                    <input class="form-control" id="r-product-id" placeholder="ID" type="number">
+                </div>
+
+
+                <button class="btn btn-danger mb-2" type="submit">Confirm</button>
+
+            </form>
+        </div>
+
+
+    </section>
+
+
+    <section class="container hide" id="categories">
+        <div class="row d-flex flex-row justify-content-between">
+
+            <button class="btn btn-success collapsed" id="btn-add-cat" type="button">Add</button>
+
+            <button class="btn btn-info collapsed" id="btn-edit-cat" type="button">Edit</button>
+
+            <button class="btn btn-danger collapsed" id="btn-del-cat" type="button">Delete</button>
+        </div>
+        <div class="collapse mt-3 p-4" id="section-add-cats">
+            <form>
+                <!--                Name-->
+                <div class="form-group">
+                    <label for="add-cat-name">Category Name</label>
+                    <input class="form-control" id="add-cat-name" placeholder="Name" type="text">
+                </div>
+                <!--                short Dessc-->
+                <div class="form-group">
+                    <label for="add-cat-sDesc">Short Description</label>
+                    <input class="form-control" id="add-cat-sDesc" placeholder="Short description ..." type="text">
+                </div>
+                <!--                Long Desc-->
+                <div class="form-group">
+                    <label for="add-cat-desc">Description</label>
+                    <textarea class="form-control" id="add-cat-desc" placeholder="Description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="add-prod-img">Add Image</label>
+                    <input class="form-control-file" id="add-cat-img" type="file">
+                </div>
+                <!--                button-->
+                <button class="btn btn-success mb-2" type="submit">Confirm</button>
+
+            </form>
+        </div>
+    </section>
+    <section class="container hide" id="cooperatives">
+        <ul>
+            <li>regerghrh</li>
+            <li>ezfzefzef</li>
+            <li>zefezfzefefezf</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Page content -->
+
+
+<!--bootstrap JS-->
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!--Script.js-->
+<script src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+
+// LOG IN SECTION///////////////////////////////////////////////////
+
+body{
+    .login{
+        .login__container{
+            display: flex;
+            flex-direction: column;
+            margin: 80px auto;
+            
+            .login__form__container{
+                padding: 30px;
+                border-radius: 0px 0px 10px 10px;
+                box-shadow: 2px 7px 17px -8px #000;
+                margin:auto;
+                background-color: white;
+                .login__check__container{
+                    display: flex ;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .btn{
+                    display: block;
+                    margin: auto;
+                    border: 2px solid #e59233;
+                    border-radius: 24px;
+                    background-color: white;
+                    color: rgb(255, 0, 140);
+                }
+                .btn:hover{
+                    background: linear-gradient(to right, #ff3399 0%, #ff9900 100%) !important; 
+                    color: white !important;
+                    border: 2px solid #e59233 !important
+                }
+            }
+
+            .login__title__container{
+                text-align: center;
+                background: linear-gradient(to right, #ff3399 0%, #ff9900 100%);
+                margin:auto;
+                border-radius: 10px 10px 0px 0px;
+
+                p{
+                    font-weight: bolder;
+                    color: white;
+                    margin-top: 5%;
+                }
+            }
+            
+            .login__register__container{
+                text-align: center;
+            }
+        }
+    }
+}
+
+// SIGN UP SECTION///////////////////////////////////////////////////
+
+
+
+body{
+    .sec__signup{
+        // margin-top: 80px;
+        background-image: url(/assets/png/background_signup.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed ;
+        color: white;
+        font-weight: bolder;
+        padding-bottom: 1px;
+
+        h3{
+            text-align: center;
+            padding-top: 33px;
+            font-weight: bolder;
+        }
+
+        .inscription__ligne{
+            border-bottom: 3px solid #e59233;
+            width: 150px;
+            margin: auto;
+        }
+        .inscription__block{
+            margin: auto;
+            max-width: 35% !important;
+            display: block;
+
+            .btn{
+                display: block;
+                    margin: auto;
+                    border: 2px solid #e59233;
+                    border-radius: 24px;
+                    background-color: white;
+                    color: rgb(255, 0, 140);
+                    width: 257px;
+                }
+                .btn:hover{
+                    background: linear-gradient(to right, #ff3399 0%, #ff9900 100%) !important; 
+                    color: white !important;
+                    border: 2px solid #e59233 !important
+
+            }
+            .login__register__container{
+                text-align: center;
+            }
+            span{
+                color: red;
+            }
+        }
+
+    }
+
+    .MDP__oublié{
+        p{
+            text-align: center;
+        }
+    }
+}
