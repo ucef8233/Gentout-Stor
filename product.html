@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Product page</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <!--    Fontawesome-->
+    <!--    <link rel="stylesheet" href="src/css/fontawesome.min.css">-->
+    <script src="https://kit.fontawesome.com/8ac7442e81.js" crossorigin="anonymous"></script>
+    <!--    style.css-->
+    <link href="src/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Page Content -->
+<!--Section Product -->
+<section class="productSection">
+    <div class="container">
+        <div class="row">
+            <!--            Product Img-->
+            <div class="col-md-5 mt-4 mr-auto">
+                <div class="border text-center ">
+                    <img src="src/img/product.jpg" alt="Image" class="img-fluid" width="440px">
+                </div>
+            </div>
+            <!--            Product Infos-->
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="product_details">
+                    <div class="product_details_title">
+                        <h2>Product Name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate officiis quos,
+                            repudiandae similique veritatis!</p>
+                    </div>
+                    <div class="free_delivery badge-light text-center p-2">
+
+                        <!--                        <span class="bg-light"></span>-->
+                        <span>Payment On delivery</span>
+                    </div>
+                    <div class="original_price">190.00 DH</div>
+                    <div class="product_price">149.00 DH</div>
+
+                    <div class="product_color">
+                        <span>Select Color:</span>
+                        <ul>
+                            <li style="background: #e54e5d"></li>
+                            <li style="background: #252525"></li>
+                            <li style="background: #60b3f3"></li>
+                        </ul>
+                    </div>
+                    <div class="quantity d-flex flex-column flex-row align-items-center justify-content-center">
+                        <span>Quantity:</span>
+                        <div class="quantity_selector mb-2 ">
+                            <span class="minus">
+                                <i class="fa fa-minus" aria-hidden="true">
+
+                                </i>
+                            </span>
+                            <span id="quantity_value">1</span>
+                            <span class="plus">
+                                <i class="fa fa-plus" aria-hidden="true">
+                                </i>
+                            </span>
+                        </div>
+                        <div class="red_button add_to_cart_button border rounded-pill">
+                            <a href="#">add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    Section Related Product-->
+
+
+<!--    Section About Product -->
+<section class="product_benefit">
+    <div class="container">
+        <div class="row benefit_row d-flex flex-row align-items-center">
+
+            <div class="col-lg-4 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon">
+                        <i class="fa fa-truck" aria-hidden="true">
+                        </i>
+                    </div>
+                    <div class="benefit_content">
+                        <h6>free shipping</h6>
+                        <p>Suffered Alteration in Some Form</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                    </div>
+                    <div class="benefit_content">
+                        <h6>cache on delivery</h6>
+                        <p>The Internet Tend To Repeat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 benefit_col ">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon">
+                        <i class="fa fa-undo" aria-hidden="true"></i>
+                    </div>
+                    <div class="benefit_content">
+                        <h6>48 hours return</h6>
+                        <p>Making it Look Like Readable</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--        HR-->
+        <hr>
+    </div>
+</section>
+<section class="productDesc container ">
+    <div class="desc_title text-center mt-lg-5">
+        <h3>Description</h3>
+    </div>
+    <div class="desc_content row ">
+
+        <div class="row align-items-center bg-light pt-lg-4">
+
+            <div class="col-5 text-center">
+                <img src="src/img/product.jpg" alt="" width="400px">
+            </div>
+            <div class="col-7">
+                <h5 class="mb-3">Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at beatae et facere magnam magni nesciunt
+                    non, placeat saepe tenetur.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center bg-light pt-lg-4">
+
+            <div class="col-7">
+                <h5 class="mb-3">Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at beatae et facere magnam magni nesciunt
+                    non, placeat saepe tenetur.</p>
+            </div>
+            <div class="col-5 text-center">
+                <img src="src/img/product.jpg" alt="" width="400px">
+            </div>
+        </div>
+    </div>
+</section>
+<!--bootstrap JS-->
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!--Script.js-->
+<script src="src/js/main.js"></script>
+</body>
+</html>
